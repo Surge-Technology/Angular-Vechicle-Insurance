@@ -26,10 +26,16 @@ const routes: Routes = [
           import('./views/dashboard/dashboard.module').then((m) => m.DashboardModule)
       },
       {
-        path: 'CustomerInformation',
+        path: 'VehicleInformation',
         loadChildren: () =>
-          import('./views/customer-information/customer-information.module').then((m) => m.CustomerInformationModule)
+          import('./views/vehicle-information/vehicle-information.module').then((m) => m.VehicleInformationModule)
       },
+      {
+        path: 'ProposalForm',
+        loadChildren: () =>
+          import('./views/proposal-form/proposal-form.module').then((m) => m.ProposalFormModule)
+      },
+      
       {
         path: 'theme',
         loadChildren: () =>
