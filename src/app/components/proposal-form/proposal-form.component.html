@@ -1,0 +1,125 @@
+<div class="row">
+    <div class="col-12 ">
+      <mat-card class="parent_card" style="margin-top: 20px;">
+        <mat-card-header style="padding-bottom: 5px;"><strong>PROPOSAL FORM</strong></mat-card-header>
+        <mat-card-content style="margin: 5px;">
+          <form [formGroup]="proposalData" (ngSubmit)="onSubmit()">
+            <table class="table" cellpadding="10" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td><label for="name">Name</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="name" size="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="age">Age</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="age" size="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="address">Address</label></td>
+                  <td>
+                    <textarea
+                      type="text"
+                      class="form-control"
+                      formControlName="address" cols="30"
+                    ></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="color_of_car">Color of car</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="color_of_car" size="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="usage">Usage</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="usage" size="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="rc_book_number">RC Book Number</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="rc_book_number" size="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="engine_number">Engine Number</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="engine_number" size="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="chassis_number">Chassis Number</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="chassis_number" size="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="driver_licence_number">Driver License Number</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="driver_licence_number" size="30"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="row">
+              <div class="col-md-9 offset-md-3">
+                <button
+                  class="btn btn-danger"
+                  type="reset"
+                  (click)="goBack()"
+                  style="background-color: rgb(242, 110, 110);"
+                >
+                  Cancel
+                </button>
+                <button
+                  class="btn btn-primary"
+                  type="submit"
+                  style="background-color: rgb(82, 155, 244);"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  

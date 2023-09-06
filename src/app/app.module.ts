@@ -8,11 +8,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './components/register/register.component';
+import { CommonModule } from '@angular/common';
+import { VehicleInformationComponent } from './components/vehicle-information/vehicle-information.component';
+import { ProposalFormComponent } from './components/proposal-form/proposal-form.component';
+import { MatCardModule } from '@angular/material/card';
+import { CheckoutComponent } from './components/checkout/checkout.component';
+import { InboxComponent } from './components/inbox/inbox.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    VehicleInformationComponent,
+    ProposalFormComponent,
+    CheckoutComponent,
+    InboxComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +32,8 @@ import { RegisterComponent } from './components/register/register.component';
     AngularMaterialModule,
     FlexLayoutModule,
     FormsModule, 
-    ReactiveFormsModule
+    ReactiveFormsModule,     
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,79 @@
+<div class="row">
+    <div class="col-12">
+      <mat-card class="parent_card" style="margin-top: 200px;">
+        <mat-card-header style="padding-bottom: 5px;"><strong>PAYMENT</strong></mat-card-header>
+        <mat-card-content style="margin: 5px;">
+          <form [formGroup]="paymentData" (ngSubmit)="onSubmit()">
+            <table class="table" cellpadding="10" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td><label for="card_name">Card Holder Name</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="card_name"
+                      size="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="card_number">Card Number</label></td>
+                  <td>
+                    <input
+                      type="password"
+                      class="form-control"
+                      formControlName="card_number"
+                      size="30" style="width: 95%"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="valid_upto">Valid Upto</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="valid_upto"
+                      size="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="cvv">CVV</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="cvv"
+                      size="30"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="row">
+              <div class="col-md-9 offset-md-3">
+                <button
+                  class="btn btn-danger"
+                  type="reset"
+                  (click)="goBack()"
+                  style="background-color: rgb(242, 110, 110);"
+                >
+                  Cancel
+                </button>
+                <button
+                  class="btn btn-primary"
+                  type="submit"
+                  style="background-color: rgb(82, 155, 244);"
+                >
+                  Pay Now
+                </button>
+              </div>
+            </div>
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  

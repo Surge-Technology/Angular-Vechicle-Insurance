@@ -1,0 +1,145 @@
+<div class="row">
+    <div class="col-12">
+      <mat-card class="parent_card" style="margin-top: 20px;">
+        <mat-card-header style="padding-bottom: 5px;"><strong>VEHICLE INFORMATION</strong></mat-card-header>
+        <mat-card-content style="margin: 5px;">
+          <form [formGroup]="userData" (ngSubmit)="onSubmit()">
+            <table class="table" cellpadding="10" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td><label for="brand">Brand</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="brand"
+                      size="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="model">Model</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="model"
+                      size="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="make">Make</label></td>
+                  <td>
+                    <input
+                      type="number"
+                      class="form-control"
+                      formControlName="make" 
+                      style="width: 30ch;" 
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="registration">Registration number</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="registration"
+                      size="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="rto_location">RTO location</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="rto_location"
+                      size="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="billing_address">Billing address</label></td>
+                  <td>
+                    <textarea
+                      type="text"
+                      class="form-control"
+                      formControlName="billing_address"
+                      cols="30"
+                    ></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="vehicle_life_years">Vehicle Life Years</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="vehicle_life_years"
+                      size="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="no_of_claims_made">Number Of Claims Made</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="no_of_claims_made"
+                      size="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="criminal_records">Criminal Records</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="criminal_records"
+                      size="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="age_of_the_owner">Age Of the Owner</label></td>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      formControlName="age_of_the_owner"
+                      size="30"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="row">
+              <div class="col-md-9 offset-md-3">
+                <button
+                  class="btn btn-danger"
+                  type="reset"
+                  (click)="goBack()"
+                  style="background-color: rgb(242, 110, 110);"
+                >
+                  Cancel
+                </button>
+                <button
+                  class="btn btn-primary"
+                  type="submit"
+                  style="background-color: rgb(82, 155, 244);"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  
