@@ -14,6 +14,7 @@ import { ProposalFormComponent } from './components/proposal-form/proposal-form.
 import { MatCardModule } from '@angular/material/card';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { InboxComponent } from './components/inbox/inbox.component';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { InboxComponent } from './components/inbox/inbox.component';
     FlexLayoutModule,
     FormsModule, 
     ReactiveFormsModule,     
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
